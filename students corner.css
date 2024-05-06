@@ -1,0 +1,475 @@
+*{ padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    user-select: none;
+    font-family: sans-serif;
+}
+.top{
+     top: 0;
+    position: fixed; 
+    width: 100%;
+    height:fit-content;
+    overflow: hidden;
+}
+
+.tophcontainer{
+    background-color:rgb(7, 54, 87);
+    text-align: center;
+    color: aliceblue;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    width: 100%;
+}
+.toph{
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+.toph h1{
+    color:#fff;
+}
+ul{
+    background:rgb(7, 54, 87);
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+ul li{
+ list-style: none;
+ margin: 10px;
+}
+ul li a{
+    text-decoration: none;
+    color:#fff;
+    font-family:sans-serif;
+    font-weight: bold;
+    transition: .6s ease;
+}
+ul li a:hover{
+    background-color:peru;
+    width: fit-content;
+    height: auto;
+    border-radius: 10px;
+    padding: 10px;
+    
+}
+.developer{
+     width: 300px;
+    height: 400px; 
+    margin: 0 auto;
+    overflow: hidden;
+    text-align: center;
+}
+.developer p:nth-child(1),.developer p:nth-child(4){
+    border-bottom: 2px solid #ccc;
+}
+.developerbutton{
+    background-color: rgb(7, 54, 87);
+    border: 1px  solid rgb(7, 54, 87);
+}
+.developerbutton:hover{
+    background-color: peru;
+}
+.contact{
+    margin: 10px;
+    transition: .7s ease;
+}
+.contact:hover{
+    font-size: 20px;
+    font-family:cursive;
+}
+.picdescript a{
+text-decoration: none;
+color: #fff;
+background-color: green;
+padding: 5px;
+border-radius: 10px;
+margin: 10px;
+/* overflow: hidden; */
+}
+.picdescript a:hover{
+font-family: cursive;
+}
+.picdescript .fa-whatsapp{
+width: fit-content;
+height:fit-content;
+font-size: 20px;
+color: #fff;
+
+}
+.developer img{
+    width:100%;
+    height:50%;
+    margin: 0 auto;
+    border-radius: 50%;   
+}
+button{
+    background-color: rgb(7, 54, 87);
+    color: #fff;
+    border:1px solid rgb(7, 54, 87);
+    font-weight: bold;
+    font-family: sans-serif;
+    font-size: 15px;
+    cursor: pointer;
+    transition:.3s ease-in-out;
+    padding: 2px;  
+}
+button:hover{
+    background-color: #444;
+    border-radius: 10px;
+    font-size: 20px;
+}
+.popup {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width:100%;
+    height:100%;
+    background-color:#444;
+    z-index: 1;
+    color: #fff;
+    border: 2px solid #222;
+}
+.makigi{
+    margin:0 auto;
+    width: 400px;
+    height: fit-content;
+    border: 1px solid #444;
+    font-family: sans-serif;
+    
+}
+.makigi a{
+    text-decoration: none;
+    color: #fff;
+    background-color:green;
+    border: 1px solid green;
+    border-radius:20px;
+    width: 50px;
+    height: 25px;
+    padding: 5px;
+    margin-top: 5px;
+    overflow: hidden;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    transition: ease-in-out 0.5s;
+}
+.makigi a:hover{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+.popup-content {
+    background-color: white;
+    color: #000;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.close {
+    color: #000;
+    float: right;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color:#222;
+    text-decoration: none;
+    cursor: pointer;
+}
+.leftcontaniner{
+    margin-top: 234px;
+ }
+ .leftcontent{
+    background-color: antiquewhite;
+    display:flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+ } 
+.mubas{
+   width: 150px;
+   height: 150px;
+   border-radius:50%; 
+}
+.hambager-container{
+   width: 40px;
+   height:40px;
+   background-color:rgb(7, 54, 87);
+   float: right;
+   padding: 3px;
+}
+.hambager-container:hover{
+   transition:0.3s ease-in;
+   background-color: rgb(3, 19, 19);
+   border-radius: 25px;
+   cursor: pointer;
+}
+.hambager{
+   margin-top: 5px;
+   width: 30px;
+   height: 20px;
+   display:flex;
+   justify-content: space-between; 
+   flex-direction:column;
+   cursor: pointer;
+   float:right;
+   
+}
+.hambager .hambager-bar{
+    transition:transform 0.3s; 
+   background-color: silver;
+   height: 2px;
+    width:100%; 
+}
+.hambager.active .hambager-bar:nth-child(1){
+   transform: translateY(8px) rotate(45deg);
+}
+.hambager.active .hambager-bar:nth-child(2){
+   opacity: 0;
+}
+.hambager.active .hambager-bar:nth-child(3){
+   transform: translateY(-8px) rotate(-45deg);
+}
+.menu{
+   background-color:rgb(7, 54, 87);
+   width:fit-content;
+   height:auto; 
+   float: right;  
+}
+.menu button{
+    background-color: rgb(7, 54, 87);
+    border: 1px solid rgb(7, 54, 87);
+}
+.menu button:hover{
+    background-color: peru;
+}
+.menu ul {
+  margin-top: 5px; 
+}
+.menu ul{
+    display:none;
+}
+.menu.active{
+    border-top: 5px solid olive;
+}
+.menu.active ul{
+    display: block;
+    background-color:rgb(7, 54, 87);
+   
+}
+.menu.active ul li{
+    float:right;
+    display: block;  
+}
+.menu a{
+    text-decoration: none;
+    color: #fff;
+}
+.menu a:hover{
+background-color:peru;
+}
+.w3top{
+  border: 1px solid #ccc;
+  height: fit-content;
+  
+}
+.students{
+    background-color: #ddd;
+    padding-bottom: 10px;
+} 
+.studentscontent{
+    display: flex;
+    justify-content:center; 
+    flex-wrap:wrap;
+    margin: 10px;
+    background-color: #ddd;
+    
+}
+.cardcontainer{
+    width:fit-content;
+    border: 1px solid peru;
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.card{
+    margin: 10px;
+    text-align: center;
+    font-family:cursive;
+    width:300px; 
+    text-align: center;
+    height:fit-content;
+}
+.items{
+    width: 200px;
+    height: 200px;
+    display: flex;
+    overflow: auto;
+}
+.picdiscription{
+    padding: 10px;
+}
+
+.pic{
+display:inline-block;
+overflow: auto;
+border: 1px solid #000;
+}
+.pic img{
+overflow: auto;
+width:200px;
+height:auto;
+}
+.card a{
+    text-decoration: none;
+    color: #fff;
+    background-color:green;
+    border: 1px solid green;
+    border-radius:20px;
+    width: 50px;
+    height: 25px;
+    padding: 5px;
+    margin-top: 5px;
+    overflow: hidden;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    transition: ease-in-out 0.5s;
+}
+.card a:hover{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+button{
+    background-color:#222;
+    border: 1px solid #222;
+    color: #fff;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight:bold;
+    font-size: 15px;
+    width:fit-content;
+    height: 30px;
+    border-radius: 25px;
+    margin: 5px;
+    cursor: pointer;
+  
+}
+button:hover{
+    background-color: rgb(7, 54, 87);
+    font-size: 20px;
+    font-family:sans-serif;
+} 
+
+.popup-container {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    max-width: 80%;
+    text-align: center;
+}
+img{
+    width:100%;
+}
+
+footer{
+    background-color:rgb(7, 54, 87);
+    color: #fff;
+    width: 100%; 
+    height: fit-content;
+    overflow: hidden;
+    margin-top: 0px;
+    padding: 10px;
+    text-align: center;   
+}
+footer p{
+    display:inline-block;
+    margin-top: 0;
+}
+footer p a{
+    text-decoration: none;
+    color: #fff;
+}
+@media screen and (max-width:700px)
+{   .studentheading1{
+    width: 100%;
+    font-size: 18px;
+    overflow: hidden;
+        }
+        .mubas{
+            width: 90px;
+            height: 90px;
+            border-radius:50%; 
+         }
+    .students{
+    margin-top: 148px; 
+          }
+    .card{
+        width:100%;
+        margin: 0 auto;
+        margin-right: 10px;
+        margin-bottom: 10px;   
+    }
+    .cardpicture{
+        width: 100%;
+        border: 1px solid #222; 
+    }
+    .menu ul{
+        display:none;
+    }
+    .cardcontainer:first-child{
+        margin-top: 50px;
+    }
+    .menu.active ul{
+        display: block;
+        background-color:rgb(7, 54, 87);
+       
+    }
+    .menu.active ul li{
+        float:right;
+        display: block;
+        
+    }
+    .cardcontainer{
+        display:flex;
+        justify-content:space-around; 
+        width: 100%;
+        flex-wrap: nowrap;
+    }
+    
+}
+@media screen and (min-width:701px)
+{   
+    .students{
+        margin-top: 225px; 
+    }
+    .cardpicture{
+        width:300px;
+        height:auto;
+         border: 1px solid #222; 
+         overflow: hidden;
+    }
+    .card{
+        margin: 10px;
+        text-align: center;
+        font-family:cursive;
+        width:fit-content; 
+        text-align: center;
+    }
+}
