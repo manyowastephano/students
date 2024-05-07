@@ -403,6 +403,9 @@ footer p a{
         height: 100px;
         border-radius:50%; 
      }
+      .contact{
+           margin-top:10px;
+      }
     .left-container{
         width: 100%;
         padding: 10px;
