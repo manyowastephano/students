@@ -5,12 +5,47 @@
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     user-select: none;
 }
-.top{
+.oj{
+    background-color: rgb(7, 54, 87);
+}
+.mubaslogo{
+margin-left:45%;
+}
+.top-h1{
+    padding: 10px;
+}
+nav{
+    position:sticky;
     top: 0;
-    position: fixed;
-    width: 100%;
-    height:fit-content;
-    overflow: hidden;
+     width: 100%;
+     
+}
+.box{
+    height: 25px;
+    margin-top: 5px;
+    display: flex;
+    cursor: pointer;
+    padding: 10px 20px;
+    background:#fff;
+    border-radius: 30px;
+    align-items: center;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    
+}
+.box:hover input{
+width:70px;
+
+margin:0 ;
+}
+.box input{
+    width:0;
+    outline: none;
+    border: none;
+    color: #000;
+    font-weight: 500;
+    transition: 0.8s;
+    background: transparent;
+   
 }
 
 .tophcontainer{
@@ -26,9 +61,13 @@
     padding: 0;
     margin: 0;
 }
-.toph h1{
-    color:#fff;
+.top-h1{
+    background:rgb(7, 54, 87);
+    text-align: center;
+    color: #fff;
+    padding: 10px;
 }
+
 ul{
     background:rgb(7, 54, 87);
     display:flex;
@@ -47,8 +86,8 @@ ul li a{
     font-weight: bold;
     transition: .3s ease-in-out;
 }
-ul li a:hover{
-    background-color:peru;
+ul li a:hover,button:hover{
+    background-color:rgb(79, 84, 128);
     width: fit-content;
     height: auto;
     border-radius: 10px;
@@ -109,11 +148,6 @@ button{
     transition:.3s ease-in-out;
     padding: 2px;  
 }
-button:hover{
-    background-color:peru;
-    border-radius: 10px;
-    font-size: 20px;
-}
 .popup {
     display: none;
     position: fixed;
@@ -165,8 +199,7 @@ button:hover{
 }
 .hambager-container:hover{
     transition:0.3s ease-in;
-    background-color: rgb(3, 19, 19);
-    border-radius: 25px;
+    background-color:rgb(79, 84, 128);
     cursor: pointer;
 }
 .hambager{
@@ -216,11 +249,8 @@ button:hover{
     padding: 5px;
 }
 .about:hover{
-    background-color:peru;
+    background-color:rgb(79, 84, 128);
     border-radius: 20px;
-}
-.menu.active{
-    border-top: 5px solid olive;
 }
 .menu.active ul{
     display: block; 
@@ -312,7 +342,7 @@ h3 a{
     color: #000;
 }
 .left-container{
-    margin-top: 150px;
+    
     padding: 10px;
     width:35%;
     box-shadow:4px 3px  8px #444;
@@ -330,9 +360,7 @@ h3 a{
     background-color: #fff;
     box-shadow: 0px 1px 2px 1px #444;
 }
-.card:first-child{
-    margin-top: 225px;
-}
+
 .card p:nth-child(4),:nth-child(7){
     border-bottom: 1px solid #ccc;
     padding-bottom: 10px;
@@ -475,6 +503,7 @@ footer p a{
         height: 90px;
         border-radius:50%; 
      }
+     
      .top-h1{
         width: 100%;
         font-size: 18px;
@@ -508,4 +537,5 @@ footer p a{
 .w3top{
     height: 950px;
 }
+
 }
