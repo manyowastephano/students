@@ -4,6 +4,9 @@ padding: 0;
 box-sizing: border-box;
 font-family: sans-serif;
 }
+body{
+     overflow-x:hidden;
+}
 .top{
      top: 0;
     position:static; 
@@ -49,6 +52,7 @@ font-family: cursive;
     grid-template-columns:repeat(auto-fit,minmax(400px,3fr));
     margin-left:5%;
     margin-right: -5%
+     justify-content:center;
 } 
  ul{
     background:rgb(7, 54, 87);
@@ -261,7 +265,6 @@ color: #fff;
     width:300px; 
     height: 300px;
     text-align: center;
-
     box-shadow: 3px 3px 6px rgb(9, 84, 128);
     border-radius: 10px;
 }
@@ -354,20 +357,6 @@ footer p a{
 }
  @media screen and (max-width:701px){
     
-.leftcontaniner{
-    display:grid;
-    grid-template-columns:repeat(2,1fr);
-   
-} 
-
-.module{
-    margin:10px;
-    width:200px; 
-    height: 300px;
-    text-align: center;
-    box-shadow: 3px 3px 6px rgb(9, 84, 128);
-    border-radius: 10px;
-}
     .top-h1{
         width: 100%;
     font-size: 18px;
