@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Students Corner</title>
     <link rel="stylesheet" href="students corner.css">
+   
 </head>
 <body>
 
@@ -29,8 +30,8 @@
                 </div>
                 <div class="easy" >
                         <ul>
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="modules.html">Lectures</a></li>
+                            <li><a href="MSE2.html">Home</a></li>
+                            <li><a href="modules.html">Notes</a></li>
                             <li><a href="students corner.html">Students</a></li>   
                        <button class="developerbutton" onclick="showPopup(1)">Developer</button>
                    <div id="popup1" class="popup-container">
@@ -85,9 +86,6 @@
             </nav>
         </div>
     <div class="students">
-        <div class="studentscontent">
-            
-            <div class="cardcontainer">
             <div class="card">
                     <div class="cardpicture">
                             <img src="chipapa.jpg" alt="Male Class Representantive image">
@@ -112,9 +110,6 @@
                 </div>
                 
             </div>
-            </div>
-
-             <div class="cardcontainer">
              <div class="card">
                     <div class="cardpicture">
                             <img src="fraswel.jpg" alt="Fraswel Chiyenda img">
@@ -141,9 +136,8 @@
                             </div>
                     </div>
                    
-               </div>
-            </div>
-           <div class="cardcontainer">
+                </div>
+           
            <div class="card">
                 <div class="cardpicture">
                         <img src="jesse.jpg" alt="Jesse Kwanunkhatonde's image">
@@ -173,8 +167,6 @@
                             </div>
                         </div>
                 </div>
-
-                 
              </div>
               <div class="card">
 
@@ -192,9 +184,6 @@
 
                   
               </div>
-           </div>
-
-           <div class="cardcontainer">
             <div class="card">
                     <div class="cardpicture">
                             <img src="neba.jpg" alt="Rabecca Chiphaka's image">
@@ -209,6 +198,21 @@
                     </div>
                 
               </div>
+              <div class="card">
+                <div class="cardpicture">
+                       <img src="mark.jpg" alt="Mark Ghambis img">
+                        <div class="picdiscription">
+                            <p>Name:Mark Gee <br>
+                                Lends money to everyone at a very low interest<br>
+                                Don`t panic if you don`t have floor or maize she provides at low price <br>
+                            </p>
+                                <a href="https://wa.me/+265988297297">contact her  <i class="fa fa-whatsapp"> </i></a>
+                        
+                        </div>
+                </div>
+            
+          </div>
+              
                <div class="card">
                    <div class="cardpicture">
                         <img src="mathias.jpg" alt="Mathias Mandala's image">
@@ -240,27 +244,19 @@
                                 </p>  
                             </div> 
                    </div>
-                   
+                
                </div>
             </div>
             
         </div>
-        <div class="makigi">
-            <img src="mark.jpg" alt="Mark Ghambis img">
-            <div class="picdiscription">
-                <p>Name: Mark Ghambi <br> <br>
-              find him for good quality printing services around chichiri and everywhere. &#128522; <br>
-                    </p> <br>
-          <a href="https://wa.me/+265880257266" style="margin-bottom:10px;">contact him  <i class="fa fa-whatsapp"> </i></a>
-            </div>
-        </div>
+        
     </div>
     <footer id="about">
         <p>Happy happy.. &#129312;</p><br>
         <p>Believe you me if we put God first tidusa mosavuta &#129312;</p> <br>
         <p>Class full of OG & YG`s</p>
     </footer>
-
+<!-- 
         <script>
         function togglemenu(){
             var menu=document.getElementById("menu");
@@ -284,6 +280,43 @@
                 popup.style.display = "none";
             }
         }
-    </script>
+    </script> -->
+<script>
+
+    async function fetchFiles() {
+        const response = await fetch('list_files.php');
+        const fileList = await response.text();
+        document.getElementById('fileList').innerHTML = fileList;
+    }
+    function togglemenu(){
+        var menu=document.getElementById("menu");
+        var hambager=document.querySelector(".hambager");
+        menu.classList.toggle("active");
+        hambager.classList.toggle("active");
+    }
+
+    function showPopup(id) {
+        var popup = document.getElementById(`popup${id}`);
+        if (popup) {
+            popup.style.display = "block";
+        }
+    }
+
+    function hidePopup(id) {
+        var popup = document.getElementById(`popup${id}`);
+        if (popup) {
+            popup.style.display = "none";
+        }
+    }
+
+    async function fetchFiles() {
+        const response = await fetch('list_files.php');
+        const fileList = await response.text();
+        document.getElementById('fileList').innerHTML = fileList;
+    }
+
+    // Load files on page load
+    window.onload = fetchFiles;
+</script>
 </body>
 </html>
